@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext&display=swap');
 
 html {
-    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -74,7 +74,7 @@ blockquote {
     margin: 0 auto;
 }
 
-.cento-header {
+.header {
     position: relative;
     z-index: 9;
     width: 100%;
@@ -83,12 +83,12 @@ blockquote {
     box-sizing: border-box;
 }
 
-.cento-header .logo {
+.header .logo {
     margin-bottom: 20px;
 }
 
-.cento-header .logo,
-.cento-header .logo a {
+.header .logo,
+.header .logo a {
     display: block;
     color: #000000;
     text-align: center;
@@ -132,8 +132,8 @@ blockquote {
     transition: all 300ms linear;
 }
 
-.nav ul li#active>a.wsite-menu-item,
-.nav ul li>a.wsite-menu-item:hover {
+.nav ul li#active>a.menu-item,
+.nav ul li>a.menu-item:hover {
     color: #333333;
 }
 
@@ -144,7 +144,7 @@ blockquote {
     margin: 20px auto 0;
 }
 
-.wsite-header-section:before {
+.header-section:before {
     position: absolute;
     top: 0;
     left: 0;
