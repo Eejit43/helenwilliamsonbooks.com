@@ -31,6 +31,16 @@ a {
     transition: all 300ms ease;
 }
 
+.link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #0957b3;
+}
+
 a:hover {
     color: #333333;
 }
