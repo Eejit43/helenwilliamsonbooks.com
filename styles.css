@@ -1,8 +1,11 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext&display=swap');
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -151,6 +154,6 @@ blockquote {
     width: 100%;
     min-height: 100%;
     height: inherit;
-    background: rgba(0, 0, 0, 0.2);
-    content: ' ';
+    background: rgba(0, 0, 0, 0.1);
+    content: '';
 }
