@@ -230,8 +230,10 @@ button[type=button]:focus {
 
 textarea {
     width: 400px;
+    min-width: 400px;
     max-width: 600px;
     height: 150px;
+    min-height: 150px;
     max-height: 250px;
     background-color: rgba(0, 0, 0, 0.07);
     border-radius: 6px 6px 6px 6px;
@@ -245,6 +247,18 @@ textarea {
     padding: 5px 8px;
     margin: 5px 0;
     transition: background-color 0.2s ease 0s;
+}
+
+@media (max-width: 600px) {
+    textarea {
+    width: 225px;
+    min-width: 225px;
+    max-width: 225px;
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+    resize: vertical;
+}
 }
 
 textarea:focus {
@@ -271,4 +285,10 @@ input[type=text] {
 input[type=text]:focus {
     background-color: #FFFFFF;
     outline-width: 0;
+}
+
+@media (max-width: 600px) {
+    #recaptcha {
+    transform:scale(0.8);-webkit-transform:scale(0.8);transform-origin:0 0;-webkit-transform-origin:0 0;">
+}
 }

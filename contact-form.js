@@ -6,7 +6,7 @@ window.onload = function () {
   document.getElementById('message').addEventListener("input", checkMessageField);
   document.getElementById('message').addEventListener("blur", checkMessageField);
   document.getElementById('send').addEventListener("click", submitForm);
-}
+};
 
 function setRedBorder(id) {
   let element = document.getElementById(id);
@@ -103,17 +103,15 @@ function checkMessageField() {
 let captchaState = 0; // 0 = not completed, 1 = completed
 
 function recaptchaCompleted() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  const errorMsg = document.getElementById('error-msg');
 
   captchaState = 1;
 
-  if (name.length === 0 || email.length === 0 || message.length === 0) {
+  if (nameValid === 1 || emailValid === 1 || messageValid === 1) {
     errorMsg.innerHTML = 'Please fill out missing field(s)!<br>';
-  } else if (validEmail === false) {
+  } else if (nameValid != 1 && emailValid != 1 && messageValid != 1 && validEmail === false) {
     errorMsg.innerHTML = 'Invalid email address!<br>';
-  } else if (name.length > 0 && email.length > 0 && message.length > 0 && validEmail === true) {
+  } else if (nameValid != 1 && emailValid != 1 && messageValid != 1 && validEmail === true) {
     errorMsg.innerHTML = '';
   }
 }
