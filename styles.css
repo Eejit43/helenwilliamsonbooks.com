@@ -73,7 +73,6 @@ blockquote {
 }
 
 .container {
-    overflow: hidden;
     width: 85%;
     max-width: 960px;
     margin: 0 auto;
@@ -151,14 +150,14 @@ blockquote {
     display: block;
     margin: 25px auto;
     width: 75%;
-    border: 25px solid rgba(0, 0, 0, 0.15)
+    border: 25px solid rgba(0, 0, 0, 0.18)
 }
 
 @media only screen and (max-width: 700px) {
     .header-image {
         margin: 15px auto;
         width: 85%;
-        border: 10px solid rgba(0, 0, 0, 0.15)
+        border: 10px solid rgba(0, 0, 0, 0.18)
     }
 }
 
@@ -168,4 +167,13 @@ hr {
     color: dimgray;
     border: 1px solid currentColor;
     width: 75%;
+}
+
+@media (max-width: 600px) {
+  tr {
+    display: inline;
+}
+td {
+    display: inline;
+    }
 }
