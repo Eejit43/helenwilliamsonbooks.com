@@ -131,7 +131,7 @@ function submitForm() {
   checkEmailField();
   checkMessageField();
 
-  if (nameValid === 2 && emailValid === 2 && messageValid === 2 && validEmail === true && captchaState = 1) {
+  if (nameValid === 2 && emailValid === 2 && messageValid === 2 && validEmail === true && captchaState === 1) {
     document.getElementById("contact-form").submit();
   } else if (captchaState === 0) {
     errorMsg.innerHTML = 'Please complete the captcha!';
