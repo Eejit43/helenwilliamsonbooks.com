@@ -58,16 +58,16 @@
           <tbody>
             <tr>
               <td style="width:50%;" valign="top">
-                <img src="./images/dinglewood.jpg" alt="Adventures In Dinglewood Cover" style="width:500px;max-width:100%;float:right;padding-top:5px;padding-bottom:10px;"/>
+                <img class="popupimage" src="./images/dinglewood.jpg" alt="Adventures In Dinglewood Cover" style="width:500px;max-width:100%;float:right;padding-top:5px;padding-bottom:10px;"/>
               </td>
               <td style="width:50%;padding:0 25px;color:#2a2a2a;">
-                  If you are in a hurry, you might pass by Dinglewood without paying much attention. But if you listen carefully, you just might hear the pitter-patter of small feet and the chattering of tiny voices. Turn the page— There’s a world of adventure here in Dinglewood for you to discover!
-                  <hr>
-                  “. . . Adventures in Dinglewood is sure to take its place alongside many long-loved children’s books as a delightful modern classic.”<br><em>— Kai Rady, Toy and Book Buyer, Shenanigans (est. 1974), Charlottesville, VA, USA</em><br>
-                  <div style="height:10px;overflow:hidden;width:100%;"></div>
-                  <hr>
-                  <div style="height:10px;overflow:hidden;width:100%;"></div>
-                  “Helen Williamson and Nancy Atkins charm young readers with the magical adventures of Henrietta and Jasper as they encounter Dinglewood’s many zany woodland creatures. . . Adventures in Dinglewood would be a wonderful addition to any child’s bookshelf.”<br><em>— Anna Burger, author of Pea Soup and the Seafood Feast and The Sea Hunt</em>
+                If you are in a hurry, you might pass by Dinglewood without paying much attention. But if you listen carefully, you just might hear the pitter-patter of small feet and the chattering of tiny voices. Turn the page— There’s a world of adventure here in Dinglewood for you to discover!
+                <hr>
+                “. . . Adventures in Dinglewood is sure to take its place alongside many long-loved children’s books as a delightful modern classic.”<br><em>— Kai Rady, Toy and Book Buyer, Shenanigans (est. 1974), Charlottesville, VA, USA</em><br>
+                <div style="height:10px;overflow:hidden;width:100%;"></div>
+                <hr>
+                <div style="height:10px;overflow:hidden;width:100%;"></div>
+                “Helen Williamson and Nancy Atkins charm young readers with the magical adventures of Henrietta and Jasper as they encounter Dinglewood’s many zany woodland creatures. . . Adventures in Dinglewood would be a wonderful addition to any child’s bookshelf.”<br><em>— Anna Burger, author of Pea Soup and the Seafood Feast and The Sea Hunt</em>
               </td>
             </tr>
           </tbody>
@@ -81,7 +81,7 @@
               <tbody>
                 <tr>
                   <td style="width:40%;" valign="top">
-                    <img src="./images/dinosaur.png" alt="I Just Met A Dinosaur! Cover" style="width:350px;max-width:100%;float:right;padding-top:5px;padding-bottom:25px;"/>
+                    <img class="popupimage" src="./images/dinosaur.png" alt="I Just Met A Dinosaur! Cover" style="width:350px;max-width:100%;float:right;padding-top:5px;padding-bottom:25px;"/>
                   </td>
                   <td style="width:60%;padding:0 15px 25px 25px;">
                     If you met a dinosaur, what would you do?<br>Play hide-and-seek or go to the zoo?<br>Who knows if their skin was pink, purple, or blue?<br>Or if they squawked, roared, or mooed?<br>Did they polish their nails and feathers and scales,<br>And sharpen their teeth with the ends of their tails?<br><br><em>When you open this book<br>of dinosaur rhymes<br>You’ll meet some of those creatures<br>from long-ago times!</em>
@@ -93,5 +93,11 @@
         </div>
       </div>
     </div>
+    <div id="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="enlarged-image">
+      <div id="caption"></div>
+    </div>
+    <script src="./image-popup.js"></script>
   </body>
 </html>
