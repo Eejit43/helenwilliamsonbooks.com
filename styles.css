@@ -251,14 +251,14 @@ textarea {
 
 @media (max-width: 600px) {
     textarea {
-    width: 250px;
-    min-width: 250px;
-    max-width: 250px;
-    height: 150px;
-    min-height: 150px;
-    max-height: 250px;
-    resize: vertical;
-}
+        width: 250px;
+        min-width: 250px;
+        max-width: 250px;
+        height: 150px;
+        min-height: 150px;
+        max-height: 250px;
+        resize: vertical;
+    }
 }
 
 textarea:focus {
@@ -289,6 +289,35 @@ input[type=text]:focus {
 
 @media (max-width: 600px) {
     #recaptcha {
-    transform:scale(0.8);-webkit-transform:scale(0.8);transform-origin:0 0;-webkit-transform-origin:0 0;">
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        ">
+
+    }
 }
+
+.mobilehidden {
+    display: unset;
+}
+
+.mobileonly {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .mobilehidden {
+        display: none;
+    }
+    .mobileonly {
+        display: unset;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fillercol {
+        width: 0 !important;
+        padding: 0 !important;
+    }
 }
