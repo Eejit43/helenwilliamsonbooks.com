@@ -170,10 +170,10 @@ hr {
 }
 
 @media (max-width: 600px) {
-  tr {
-    display: inline;
+  tr, td {
+    display: inline-block;
+    min-width: 90%;
+    margin: 0 auto !important;
+    padding: 3% !important;
 }
-td {
-    display: inline;
-    }
 }
