@@ -100,6 +100,30 @@ function checkMessageField() {
   }
 }
 
+let captchaState = 0; // 0 = not completed, 1 = completed
+
+function recaptchaCompleted() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  captchaState = 1;
+
+  if (name.length === 0 || email.length === 0 || message.length === 0) {
+    errorMsg.innerHTML = 'Please fill out missing fields!<br>';
+  } else if (validEmail === false) {
+    errorMsg.innerHTML = 'Invalid email address!<br>';
+  } else if (name.length > 0 && email.length > 0 && message.length > 0 && validEmail === true) {
+    errorMsg.innerHTML = '';
+  }
+}
+
+function recaptchaError() {
+  const errorMsg = document.getElementById('error-msg');
+  captchaState = 0;
+  errorMsg.innerHTML = 'An error occurred or the captcha expired, please re-complete!';
+}
+
 function submitForm() {
   const errorMsg = document.getElementById('error-msg');
 
@@ -107,7 +131,9 @@ function submitForm() {
   checkEmailField();
   checkMessageField();
 
-  if (nameValid === 2 && emailValid === 2 && messageValid === 2 && validEmail === true) {
+  if (nameValid === 2 && emailValid === 2 && messageValid === 2 && validEmail === true && captchaState = 1) {
     document.getElementById("contact-form").submit();
+  } else if (captchaState === 0) {
+    errorMsg.innerHTML = 'Please complete the captcha!';
   }
 }
