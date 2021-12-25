@@ -67,11 +67,12 @@ function checkEmailField() {
     setRedBorder('email');
     errorMsg.innerHTML = 'Please fill out missing field(s)!<br>';
     emailValid = 1;
-  } else if (name.length > 0 && email.length > 0 && message.length > 0 && validEmail === true && document.getElementById('name').style.border != "1px solid #ff5555" && document.getElementById('message').style.border != "1px solid #ff5555") {
+  } else if (name.length > 0 && email.length > 0 && message.length > 0 && validEmail === true && nameValid != 1 && messageValid != 1) {
     errorMsg.innerHTML = '';
     resetBorder('email');
     emailValid = 2;
-  } else if (email.length > 0 && validEmail === true && document.getElementById('name').style.border != "1px solid #ff5555" && document.getElementById('message').style.border != "1px solid #ff5555") {
+  } else if (email.length > 0 && validEmail === true && nameValid != 1 && messageValid != 1) {
+    errorMsg.innerHTML = '';
     resetBorder('email');
     emailValid = 2;
   }

@@ -251,9 +251,9 @@ textarea {
 
 @media (max-width: 600px) {
     textarea {
-    width: 225px;
-    min-width: 225px;
-    max-width: 225px;
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
     height: 150px;
     min-height: 150px;
     max-height: 250px;
