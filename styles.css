@@ -13,7 +13,7 @@ body {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 165%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -92,9 +92,9 @@ blockquote {
 }
 
 @media only screen and (max-width: 700px) {
-  .logo {
-    font-size: 25px;
-}
+    .logo {
+        font-size: 25px;
+    }
 }
 
 .nav {
@@ -130,9 +130,9 @@ blockquote {
 }
 
 @media only screen and (max-width: 700px) {
-  .nav ul li a {
-    font-size: 14px;
-}
+    .nav ul li a {
+        font-size: 14px;
+    }
 }
 
 .nav ul li#active>a.menu-item,
@@ -151,13 +151,20 @@ blockquote {
     display: block;
     margin: 25px auto;
     width: 75%;
-    border: 25px solid rgba(0, 0, 0, 0.13)
+    border: 25px solid rgba(0, 0, 0, 0.15)
 }
 
 @media only screen and (max-width: 700px) {
-  .header-image {
-    margin: 15px auto;
-    width: 90%;
-    border: 8px solid rgba(0, 0, 0, 0.13)
+    .header-image {
+        margin: 15px auto;
+        width: 90%;
+    }
 }
+
+hr {
+    height: 0px;
+    border-radius: 3px;
+    color: dimgray;
+    border: 1px solid currentColor;
+    width: 75%;
 }
