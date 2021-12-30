@@ -26,7 +26,7 @@ const errorMsg = document.getElementById('error-msg');
 
 function updateErrorMsg() {
   if (nameValid === 1 || emailValid === 1 || messageValid === 1) {
-    errorMsg.innerHTML = 'Please fill out missing field(s)!<br>';
+    errorMsg.innerHTML = 'Please fill out the missing field(s)!<br>';
   } else if (validEmail === false) {
     errorMsg.innerHTML = 'Invalid email address!<br>';
   } else if (captchaState === 0) {
