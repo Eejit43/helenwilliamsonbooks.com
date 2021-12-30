@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-a:not(.nolinkstyle) {
+:not(.logo) > a:not(.nolinkstyle) {
     color: #b9b9b9;
     -webkit-transition: color 300ms ease;
     -moz-transition: color 300ms ease;
