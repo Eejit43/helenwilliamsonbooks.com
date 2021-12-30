@@ -29,6 +29,8 @@ function updateErrorMsg() {
     errorMsg.innerHTML = 'Please fill out missing field(s)!<br>';
   } else if (validEmail === false) {
     errorMsg.innerHTML = 'Invalid email address!<br>';
+  } else if (captchaState === 0) {
+    errorMsg.innerHTML = 'Please complete the captcha!<br>';
   } else if (captchaState === 1) {
     errorMsg.innerHTML = 'An error occurred or the captcha expired, please (re)complete!<br>';
   } else {
@@ -100,9 +102,7 @@ function submitForm() {
 
   if (nameValid === 2 && emailValid === 2 && messageValid === 2 && validEmail === true && captchaState === 2) {
     document.getElementById("contact-form").submit();
-  } else if (captchaState === 0) {
-    errorMsg.innerHTML = 'Please complete the captcha!<br>';
-  } else if (captchaState === 1) {
-    errorMsg.innerHTML = 'An error occurred or the captcha expired, please (re)complete!<br>';
+  } else {
+    updateErrorMsg()
   }
 }
