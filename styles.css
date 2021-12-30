@@ -36,12 +36,12 @@ a:hover:not(.nolinkstyle) {
     color: #333333;
 }
 
-.link:not(.nolinkstyle) {
+:not(.logo) > .link:not(.nolinkstyle) {
     text-decoration: none;
     color: #007bff;
 }
 
-.link:hover:not(.nolinkstyle) {
+:not(.logo) > .link:hover:not(.nolinkstyle) {
     text-decoration: none;
     color: #0957b3;
 }
