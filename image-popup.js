@@ -8,7 +8,6 @@ let captionText = document.getElementById("caption");
 for (let i = 0; i < images.length; i++) {
   let img = images[i];
   img.onclick = function (evt) {
-    console.log(evt);
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
