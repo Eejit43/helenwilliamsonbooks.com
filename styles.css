@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-:not(.logo) > a:not(.nolinkstyle) {
+:not(.logo)>a:not(.nolinkstyle) {
     color: #b9b9b9;
     -webkit-transition: color 300ms ease;
     -moz-transition: color 300ms ease;
@@ -36,12 +36,12 @@ a:hover:not(.nolinkstyle) {
     color: #333333;
 }
 
-:not(.logo) > .link:not(.nolinkstyle) {
+:not(.logo)>.link:not(.nolinkstyle) {
     text-decoration: none;
     color: #007bff;
 }
 
-:not(.logo) > .link:hover:not(.nolinkstyle) {
+:not(.logo)>.link:hover:not(.nolinkstyle) {
     text-decoration: none;
     color: #0957b3;
 }
@@ -327,13 +327,13 @@ input[type=text]:focus {
 }
 
 .popupimage {
-  /*border-radius: 5px;*/
-  cursor: pointer;
-  transition: 0.3s;
+    /*border-radius: 5px;*/
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .popupimage:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 /* Modified from https://jsfiddle.net/snowMonkey/f1zav0ge/ */
