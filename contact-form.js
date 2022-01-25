@@ -1,12 +1,11 @@
-window.onload = function () {
-    document.getElementById('name').addEventListener("input", checkNameField);
-    document.getElementById('name').addEventListener("blur", checkNameField);
-    document.getElementById('email').addEventListener("input", checkEmailField);
-    document.getElementById('email').addEventListener("blur", checkEmailField);
-    document.getElementById('message').addEventListener("input", checkMessageField);
-    document.getElementById('message').addEventListener("blur", checkMessageField);
-    document.getElementById('send').addEventListener("click", submitForm);
-};
+/* Add event listeners */
+document.getElementById('name').addEventListener("input", checkNameField);
+document.getElementById('name').addEventListener("blur", checkNameField);
+document.getElementById('email').addEventListener("input", checkEmailField);
+document.getElementById('email').addEventListener("blur", checkEmailField);
+document.getElementById('message').addEventListener("input", checkMessageField);
+document.getElementById('message').addEventListener("blur", checkMessageField);
+document.getElementById('send').addEventListener("click", submitForm);
 
 function setRedBorder(id) {
     let element = document.getElementById(id);
@@ -65,7 +64,7 @@ function checkEmailField() {
         emailValid = 2;
         updateErrorMsg();
     }
-    if (validEmail != true && email.length > 0) {
+    if (validEmail !== true && email.length > 0) {
         setRedBorder('email');
         emailValid = 1;
         errorMsg.innerHTML = 'Invalid email address!<br>';
@@ -103,6 +102,6 @@ function submitForm() {
     if (nameValid === 2 && emailValid === 2 && messageValid === 2 && validEmail === true && captchaState === 2) {
         document.getElementById("contact-form").submit();
     } else {
-        updateErrorMsg()
+        updateErrorMsg();
     }
 }
