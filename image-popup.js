@@ -5,21 +5,24 @@ let images = document.getElementsByClassName('popupimage');
 let modalImg = document.getElementById('enlarged-image');
 let captionText = document.getElementById('caption');
 
-for (let i = 0; i < images.length; i++) {
-    let img = images[i];
-    img.addEventListener('click', function () {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+function addBookListeners() {
+    for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener('click', function () {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        });
+    }
+
+    let span = document.getElementsByClassName('close')[0];
+
+    span.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', function () {
+        modal.style.display = 'none';
     });
 }
 
-let span = document.getElementsByClassName('close')[0];
-
-span.addEventListener('click', function () {
-    modal.style.display = 'none';
-});
-
-modal.addEventListener('click', function () {
-    modal.style.display = 'none';
-});
+addBookListeners();

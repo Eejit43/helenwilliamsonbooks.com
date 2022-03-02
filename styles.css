@@ -4,7 +4,11 @@
  ================
 */
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import '/tooltip-styles.css';
+
+/* For Font Awesome icons, see: https://fontawesome.com/v6/search?m=free&s=solid */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'); /* https://cdnjs.com/libraries/font-awesome */
 
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext&display=swap');
@@ -87,16 +91,6 @@ hr {
 }
 
 @media (max-width: 600px) {
-    tr,
-    td {
-        display: inline-block;
-        margin: 0 auto !important;
-        min-width: 90%;
-        padding: 3% !important;
-    }
-}
-
-@media (max-width: 600px) {
     #recaptcha {
         transform: scale(0.8);
         -webkit-transform: scale(0.8);
@@ -105,10 +99,13 @@ hr {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .fillercol {
-        padding: 0 !important;
-        width: 0 !important;
+@media (max-width: 600px) {
+    tr,
+    td {
+        display: inline-block;
+        margin: 0 auto !important;
+        min-width: 90%;
+        padding: 3% !important;
     }
 }
 
@@ -206,6 +203,63 @@ nav ul li > a:hover {
         border: 10px solid rgba(0, 0, 0, 0.18);
         margin: 15px auto;
         width: 85%;
+    }
+}
+
+.book-table {
+    padding-top: 35px;
+}
+
+.book-table td:first-of-type {
+    vertical-align: top;
+    width: 40%;
+}
+
+.book-table td:last-of-type {
+    padding: 6px 25px;
+    vertical-align: top;
+    width: 60%;
+}
+
+.book-table div.paragraph {
+    text-align: left;
+    color: #2a2a2a;
+    font-size: 18px;
+}
+
+.book-table div.paragraph strong a {
+    font-size: 22px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.book-table strong:first-of-type ~ div {
+    padding-top: 20px;
+    display: block;
+}
+
+.book-table + div {
+    padding: 20px 0px;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+    .book-table + div {
+        padding: 0px;
+    }
+}
+
+.book-table + div img {
+    height: 25px;
+    max-width: 100%;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .book-table + div img {
+        padding: 12px;
     }
 }
 
