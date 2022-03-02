@@ -1,7 +1,19 @@
+/*
+ ================
+     IMPORTS
+ ================
+*/
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext&display=swap');
+
+/*
+ ================
+     GENERAL
+ ================
+*/
 
 html {
     background: #fffeed;
@@ -60,19 +72,62 @@ div.paragraph {
     margin-bottom: 10px;
 }
 
-div.paragraph {
-    line-height: 1.5em;
-    margin-bottom: 10px;
-}
-
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 85%;
 }
 
+hr {
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    color: dimgray;
+    height: 0px;
+    width: 75%;
+}
+
+@media (max-width: 600px) {
+    tr,
+    td {
+        display: inline-block;
+        margin: 0 auto !important;
+        min-width: 90%;
+        padding: 3% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #recaptcha {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fillercol {
+        padding: 0 !important;
+        width: 0 !important;
+    }
+}
+
+.book-cover {
+    float: right;
+    max-width: 100%;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    width: 350px;
+}
+
+/*
+ ================
+  NAVBAR/HEADER
+ ================
+*/
+
 .logo {
-    color: #000000;
+    color: black;
     display: block;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 40px;
@@ -154,23 +209,11 @@ nav ul li > a:hover {
     }
 }
 
-hr {
-    border: 1px solid currentColor;
-    border-radius: 3px;
-    color: dimgray;
-    height: 0px;
-    width: 75%;
-}
-
-@media (max-width: 600px) {
-    tr,
-    td {
-        display: inline-block;
-        margin: 0 auto !important;
-        min-width: 90%;
-        padding: 3% !important;
-    }
-}
+/*
+ ================
+     INPUTS
+ ================
+*/
 
 input[type='button'] {
     appearance: none;
@@ -282,49 +325,13 @@ input[type='email']:focus {
     outline-width: 0;
 }
 
-@media (max-width: 600px) {
-    #recaptcha {
-        transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        transform-origin: 0 0;
-        -webkit-transform-origin: 0 0;
-    }
-}
-
-.mobilehidden {
-    display: unset;
-}
-
-.mobileonly {
-    display: none;
-}
-
-@media only screen and (max-width: 600px) {
-    .mobilehidden {
-        display: none;
-    }
-    .mobileonly {
-        display: unset;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .fillercol {
-        padding: 0 !important;
-        width: 0 !important;
-    }
-}
-
-.book-cover {
-    float: right;
-    max-width: 100%;
-    padding-bottom: 15px;
-    padding-top: 5px;
-    width: 350px;
-}
+/*
+ ================
+   IMAGE POPUP
+ ================
+*/
 
 .popupimage {
-    /*border-radius: 5px;*/
     cursor: pointer;
     transition: 0.3s;
 }
