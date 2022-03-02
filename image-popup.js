@@ -7,19 +7,19 @@ let captionText = document.getElementById('caption');
 
 for (let i = 0; i < images.length; i++) {
     let img = images[i];
-    img.onclick = function (evt) {
+    img.addEventListener('click', function () {
         modal.style.display = 'block';
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-    };
+    });
 }
 
 let span = document.getElementsByClassName('close')[0];
 
-span.onclick = function () {
+span.addEventListener('click', function () {
     modal.style.display = 'none';
-};
+});
 
-modal.onclick = function () {
+modal.addEventListener('click', function () {
     modal.style.display = 'none';
-};
+});

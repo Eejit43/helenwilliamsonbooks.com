@@ -55,25 +55,14 @@ h2 {
     margin-bottom: 15px;
 }
 
-div.paragraph,
 div.paragraph {
     line-height: 1.5em;
     margin-bottom: 10px;
 }
 
-p,
 div.paragraph {
     line-height: 1.5em;
     margin-bottom: 10px;
-}
-
-blockquote {
-    border-left: 4px solid #ddd;
-    color: #888;
-    font-style: italic;
-    line-height: 1.5;
-    margin: 10px 0 10px 0;
-    padding-left: 20px;
 }
 
 .container {
@@ -100,23 +89,23 @@ blockquote {
     }
 }
 
-.nav {
+nav {
     text-align: center;
 }
 
-.nav ul {
+nav ul {
     display: inline-block;
     list-style-type: none;
     padding-inline-start: 0;
     vertical-align: top;
 }
 
-.nav ul li {
+nav ul li {
     display: inline-block;
     position: relative;
 }
 
-.nav ul li a {
+nav ul li a {
     color: #b9b9b9;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 16px;
@@ -133,13 +122,13 @@ blockquote {
 }
 
 @media only screen and (max-width: 700px) {
-    .nav ul li a {
+    nav ul li a {
         font-size: 14px;
     }
 }
 
-.nav ul li#active > a.menu-item,
-.nav ul li > a.menu-item:hover {
+nav ul li#active > a,
+nav ul li > a:hover {
     color: #333333;
 }
 
@@ -324,6 +313,14 @@ input[type='email']:focus {
         padding: 0 !important;
         width: 0 !important;
     }
+}
+
+.book-cover {
+    float: right;
+    max-width: 100%;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    width: 350px;
 }
 
 .popupimage {
